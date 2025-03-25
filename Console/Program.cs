@@ -84,8 +84,19 @@ public class Program
 	}
 
 	// Implement this method following a similar pattern as above
-	public static double Power(string x, string y)
-	{
-		return 0.0;
-	}
+public static double Power(string x, string y)
+{    
+    int i = 1;
+    double sum = double.Parse(x); 
+    if (double.Parse(y) == 1) 
+    {
+        return double.Parse(x);
+    }
+    while (i < double.Parse(y))
+    {
+        sum = sum * double.Parse(x);
+        i++;
+    }
+    return sum;    
+}
 }
