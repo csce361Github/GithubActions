@@ -122,7 +122,7 @@ public class Power
     public void Power_Valid_Wolken()
     {
         Assert.AreEqual(196, Program.Power("14", "2"));
-        Assert.AreEqual(27, Program.Power("3", "3"));
+        Assert.AreEqual(27, Program.Power("2", "3"));
         Assert.AreEqual(128, Program.Power("2", "7"));
     }
 
