@@ -1,7 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
-#include <cmath>
-namespace GithubActionsLab;
 
+namespace GithubActionsLab;
+#include <cmath>
 public class Program
 {
 	static void Main(string[] args)
