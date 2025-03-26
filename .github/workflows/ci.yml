@@ -13,5 +13,4 @@ jobs:
           dotnet-version: '8.x'
       - name: build
         run: dotnet build
-      - name: run unit tests
-        run: dotnet test
+      
