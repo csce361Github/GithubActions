@@ -1,7 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
 namespace GithubActionsLab;
-#include <math.h>
 public class Program
 {
 	static void Main(string[] args)
@@ -85,7 +84,7 @@ public class Program
 
 	// Implement this method following a similar pattern as above
 	public static double Power(string x, string y)
-	{
-		return double.Parse(x) ** double.Parse(y);
-	}
+{
+    return Math.Pow(double.Parse(x), double.Parse(y));
+}
 }
