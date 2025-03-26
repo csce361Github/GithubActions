@@ -59,33 +59,52 @@ public class Program
 	private static string GetInput(string prompt)
 	{
 		Console.Write(prompt);
-
-		return Console.ReadLine()?.Trim() ?? throw new InvalidOperationException();
+		var input = Console.ReadLine()?.Trim();
+		if (string.IsNullOrEmpty(input))
+		{
+			throw new ArgumentException("Input cannot be empty. Please enter a valid number.");
+		}
+		return input;
 	}
 
 	public static double Add(string x, string y)
 	{
+		if (x == null || y == null)
+			throw new ArgumentNullException("Inputs cannot be null");
 		return double.Parse(x) + double.Parse(y);
 	}
 
 	public static double Subtract(string x, string y)
 	{
+		if (x == null || y == null)
+			throw new ArgumentNullException("Inputs cannot be null");
 		return double.Parse(x) - double.Parse(y);
 	}
 
 	public static double Multiply(string x, string y)
 	{
+		if (x == null || y == null)
+			throw new ArgumentNullException("Inputs cannot be null");
 		return double.Parse(x) * double.Parse(y);
 	}
 
 	public static double Divide(string x, string y)
 	{
-		return double.Parse(x) / double.Parse(y);
+		if (x == null || y == null)
+			throw new ArgumentNullException("Inputs cannot be null");
+		var denominator = double.Parse(y);
+		if (denominator == 0)
+			throw new DivideByZeroException("Cannot divide by zero");
+		return double.Parse(x) / denominator;
 	}
 
 	// Implement this method following a similar pattern as above
 	public static double Power(string x, string y)
 	{
-		return 0.0;
+		if (x == null || y == null)
+			throw new ArgumentNullException("Inputs cannot be null");
+		var baseNum = double.Parse(x);
+		var exponent = double.Parse(y);
+		return Math.Pow(baseNum, exponent);
 	}
 }
