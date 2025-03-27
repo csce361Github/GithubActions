@@ -35,7 +35,7 @@ public class Subtraction
 	{
 		Assert.AreEqual(1, Program.Subtract("2", "1"));
 		Assert.AreEqual(1, Program.Subtract("3", "2"));
-		Assert.AreEqual(12, Program.Subtract("7", "5"));
+		Assert.AreEqual(2, Program.Subtract("7", "5"));
 	}
 
 	[TestMethod]
@@ -116,7 +116,7 @@ public class Power
 	{
 		Assert.AreEqual(2, Program.Power("2", "1"));
 		Assert.AreEqual(4, Program.Power("2", "2"));
-		Assert.AreEqual(8, Program.Power("2", "4"));
+		Assert.AreEqual(8, Program.Power("2", "3"));
 	}
 
 	[TestMethod]
