@@ -1,11 +1,9 @@
-[![Run App](https://github.com/kgerot/GithubActions/actions/workflows/run-app.yaml/badge.svg)](https://github.com/kgerot/GithubActions/actions/workflows/run-app.yaml)
-
+[![Run App Rojas, (Felipe), Luis](https://github.com/Felipe-Rojas442/GithubActions/actions/workflows/ci.yml/badge.svg)](https://github.com/Felipe-Rojas442/GithubActions/actions/workflows/ci.yml)
 # Do not submit a pull request to `kgerot/GithubActions` or `dteske/TraviCI`. Not following this instruction can ruin the lab for others, so pay attention.
 
 I receive around 60 pull requests every semester and have to manually delete each request and action run. Your actions will automatically fail if you open a pull request
 
 # Github Actions Lab
-
 Because Travis CI is no longer free, we are going to look at how Github Actions can provide continuous integration on a sample project.
 
 Continuous integration can be used to perfom checks on written code, making sure that unit tests always pass or that formatting is followed, and that when changes are made, they don't break other areas of the code.
