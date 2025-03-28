@@ -38,6 +38,19 @@ public class Subtraction
 		Assert.AreEqual(5, Program.Subtract("7", "2"));
 		Assert.AreEqual(12, Program.Subtract("14", "0"));
 	}
+	 [TestMethod]
+    public void Subtract_Invalid_Patino()
+    {
+        Assert.ThrowsException<FormatException>(() => Program.Subtract("5", "a"));
+        Assert.ThrowsException<FormatException>(() => Program.Subtract("a", "2"));
+    }
+
+    [TestMethod]
+    public void Subtract_Null_Patino()
+    {
+        Assert.ThrowsException<ArgumentNullException>(() => Program.Subtract("5", null));
+        Assert.ThrowsException<ArgumentNullException>(() => Program.Subtract(null, "2"));
+    }
 
 }
 
@@ -51,7 +64,19 @@ public class Multiplication
 		Assert.AreEqual(0, Program.Multiply("0", "2"));
 		Assert.AreEqual(12, Program.Multiply("14", "0"));
 	}
+ 	[TestMethod]
+    public void Multiply_Invalid_Patino()
+    {
+        Assert.ThrowsException<FormatException>(() => Program.Multiply("3", "a"));
+        Assert.ThrowsException<FormatException>(() => Program.Multiply("a", "2"));
+    }
 
+    [TestMethod]
+    public void Multiply_Null_Patino()
+    {
+        Assert.ThrowsException<ArgumentNullException>(() => Program.Multiply("3", null));
+        Assert.ThrowsException<ArgumentNullException>(() => Program.Multiply(null, "2"));
+    }
 }
 [TestClass]
 public class Division
@@ -63,7 +88,19 @@ public class Division
 		Assert.AreEqual(5, Program.Divide("10", "2"));
 		Assert.AreEqual(12, Program.Divide("14", "0"));
 	}
+ 	[TestMethod]
+    public void Divide_Invalid_Patino()
+    {
+        Assert.ThrowsException<FormatException>(() => Program.Divide("6", "a"));
+        Assert.ThrowsException<FormatException>(() => Program.Divide("a", "2"));
+    }
 
+    [TestMethod]
+    public void Divide_Null_Patino()
+    {
+        Assert.ThrowsException<ArgumentNullException>(() => Program.Divide("6", null));
+        Assert.ThrowsException<ArgumentNullException>(() => Program.Divide(null, "2"));
+    }
 }
 
 [TestClass]
@@ -76,5 +113,19 @@ public class Power
 		Assert.AreEqual(49, Program.Power("7", "2"));
 		Assert.AreEqual(12, Program.Power("14", "0"));
 	}
+    [TestMethod]
+    public void Power_Invalid_Patino()
+    {
+        Assert.ThrowsException<FormatException>(() => Program.Power("2", "a"));
+        Assert.ThrowsException<FormatException>(() => Program.Power("a", "2"));
+        Assert.ThrowsException<FormatException>(() => Program.Power("a", "a"));
+    }
 
+    [TestMethod]
+    public void Power_Null_Patino()
+    {
+        Assert.ThrowsException<ArgumentNullException>(() => Program.Power("2", null));
+        Assert.ThrowsException<ArgumentNullException>(() => Program.Power(null, "2"));
+        Assert.ThrowsException<ArgumentNullException>(() => Program.Power(null, null));
+    }
 }
