@@ -50,6 +50,8 @@ public class Subtraction
     {
         Assert.ThrowsException<ArgumentNullException>(() => Program.Subtract("5", null));
         Assert.ThrowsException<ArgumentNullException>(() => Program.Subtract(null, "2"));
+		Assert.ThrowsException<ArgumentNullException>(() => Program.Subtract(null, null));
+
     }
 
 }
@@ -76,6 +78,8 @@ public class Multiplication
     {
         Assert.ThrowsException<ArgumentNullException>(() => Program.Multiply("3", null));
         Assert.ThrowsException<ArgumentNullException>(() => Program.Multiply(null, "2"));
+		Assert.ThrowsException<ArgumentNullException>(() => Program.Multiply(null, null)); 
+
     }
 }
 [TestClass]
@@ -100,6 +104,7 @@ public class Division
     {
         Assert.ThrowsException<ArgumentNullException>(() => Program.Divide("6", null));
         Assert.ThrowsException<ArgumentNullException>(() => Program.Divide(null, "2"));
+		Assert.ThrowsException<ArgumentNullException>(() => Program.Divide(null, null));
     }
 }
 
