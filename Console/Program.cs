@@ -86,6 +86,8 @@ public class Program
 	// Implement this method following a similar pattern as above
 	public static double Power(string x, string y)
 	{    
-        return Math.Pow(x, y);
+       double base = Convert.ToDouble(x);
+	   double exponent = Convert.ToDouble(y);
+	    return Math.Pow(base, exponent);
 	}
 }
