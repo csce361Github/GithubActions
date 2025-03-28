@@ -40,7 +40,6 @@ public class Subtraction
         Assert.AreEqual(94, Program.Subtract("110", "15")); // Purposely wrong
     }
 
-
     [TestMethod]
     public void Subtract_Invalid_Rojas()
     {
