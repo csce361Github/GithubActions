@@ -38,7 +38,7 @@ public class Addition
 	[TestMethod]
 	public void Multiply_Valid()
 	{
-		Assert.AreEqual(5, Program.Multiply("3", "2"));
+		Assert.AreEqual(6, Program.Multiply("3", "2"));
 	}
 
 	[TestMethod]
