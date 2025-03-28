@@ -120,7 +120,7 @@ public class Power
 	{
 		Assert.AreEqual(9, Program.Power("3", "2"));
 		Assert.AreEqual(25, Program.Power("5", "2"));
-		Assert.AreEqual(15, Program.Power("2", "4"));
+		Assert.AreEqual(16, Program.Power("2", "4"));
 	}
 
 	[TestMethod]
