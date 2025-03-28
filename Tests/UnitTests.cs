@@ -28,7 +28,7 @@ public class Addition
 	}
 
 	[TestMethod]
-	public void Subtract_Valid()
+	public void Subtract_Valid_Trost()
 	{
 		Assert.AreEqual(1, Program.Subtract("3", "2"));
 		Assert.AreEqual(0, Program.Subtract("5", "5"));
@@ -36,13 +36,13 @@ public class Addition
 	}
 
 	[TestMethod]
-	public void Multiply_Valid()
+	public void Multiply_Valid_Trost()
 	{
 		Assert.AreEqual(6, Program.Multiply("3", "2"));
 	}
 
 	[TestMethod]
-	public void Divide_Valid()
+	public void Divide_Valid_Trost()
 	{
 		Assert.AreEqual(2, Program.Divide("4", "2"));
 		Assert.AreEqual(1, Program.Divide("3", "3"));
