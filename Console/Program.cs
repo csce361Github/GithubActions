@@ -1,5 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
+using Math = System.Math;
+
 namespace GithubActionsLab;
 
 public class Program
@@ -85,7 +87,7 @@ public class Program
 
 	// Implement this method following a similar pattern as above
 	public static double Power(string x, string y)
-	{
-		return 0.0;
-	}
+	{ 
+        return Math.Pow(double.Parse(x), double.Parse(y));
+    }
 }
