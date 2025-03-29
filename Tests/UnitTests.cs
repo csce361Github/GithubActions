@@ -22,8 +22,10 @@ public class Addition
 	[TestMethod]
 	public void Add_Null_Patino()
 	{
+		
 		Assert.ThrowsException<ArgumentNullException>(() => Program.Add("1", null));
 		Assert.ThrowsException<ArgumentNullException>(() => Program.Add(null, "1"));
 		Assert.ThrowsException<ArgumentNullException>(() => Program.Add(null, null));
+		Assert.ThrowsException<ArgumentNullException>(() => Program.Add("1","1"));
 	}
 }
