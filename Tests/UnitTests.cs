@@ -102,13 +102,13 @@ public class Addition
     [TestMethod]
     public void Divide_ByZero_Karkoosh()
     {
-        Assert.ThrowsException<DivideByZeroException>(() => Program.Divide("1", "0"));
+        Assert.ThrowsException<DivideByZeroException>(() => { var result = Program.Divide("1", "0"); });
     }
 
     [TestMethod]
     public void Power_Valid_Karkoosh()
     {
-        Assert.AreEqual(2, Program.Power("1", "2"));
+        Assert.AreEqual(1, Program.Power("1", "2"));
         Assert.AreEqual(9, Program.Power("3", "2"));
         Assert.AreEqual(625, Program.Power("5", "4"));
     }
