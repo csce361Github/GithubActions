@@ -1,7 +1,7 @@
 namespace GithubActionsLab;
 
 [TestClass]
-public class Addition
+public class Addition_Gonzalez
 {
 	[TestMethod]
 	public void Add_Valid_Patino()
@@ -29,7 +29,7 @@ public class Addition
 }
 
 [TestClass]
-public class Subtraction
+public class Subtraction_Gonzalez
 {
     [TestMethod]
     public void Subtract_Valid_Patino()
@@ -57,7 +57,7 @@ public class Subtraction
 }
 
 [TestClass]
-public class Multiplication
+public class Multiplication_Gonzalez
 {
     [TestMethod]
     public void Multiply_Valid_Patino()
@@ -85,7 +85,7 @@ public class Multiplication
 }
 
 [TestClass]
-public class Division
+public class Division_Gonzalez
 {
     [TestMethod]
     public void Divide_Valid_Patino()
@@ -120,7 +120,7 @@ public class Division
 }
 
 [TestClass]
-public class Power
+public class Power_Gonzalez
 {
     [TestMethod]
     public void Power_Valid_Patino()
