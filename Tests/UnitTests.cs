@@ -41,7 +41,7 @@ public class Subtraction
 	 [TestMethod]
     public void Subtract_Invalid_Fruhling()
     {
-        Assert.ThrowsException<FormatException>(() => Program.Subtract("5", "a"));
+         Assert.ThrowsException<FormatException>(() => Program.Subtract("5", "a"));
         Assert.ThrowsException<FormatException>(() => Program.Subtract("a", "2"));
 		Assert.ThrowsException<FormatException>(() => Program.Subtract("a", "a"));
 
