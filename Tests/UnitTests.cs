@@ -43,6 +43,8 @@ public class Subtraction
     {
         Assert.ThrowsException<FormatException>(() => Program.Subtract("5", "a"));
         Assert.ThrowsException<FormatException>(() => Program.Subtract("a", "2"));
+		Assert.ThrowsException<FormatException>(() => Program.Subtract("a", "a"));
+
     }
 
     [TestMethod]
@@ -71,6 +73,8 @@ public class Multiplication
     {
         Assert.ThrowsException<FormatException>(() => Program.Multiply("3", "a"));
         Assert.ThrowsException<FormatException>(() => Program.Multiply("a", "2"));
+		Assert.ThrowsException<FormatException>(() => Program.Multiply("a", "a"));
+
     }
 
     [TestMethod]
@@ -97,6 +101,8 @@ public class Division
     {
         Assert.ThrowsException<FormatException>(() => Program.Divide("6", "a"));
         Assert.ThrowsException<FormatException>(() => Program.Divide("a", "2"));
+		Assert.ThrowsException<FormatException>(() => Program.Divide("a", "a"));
+
     }
 
     [TestMethod]
