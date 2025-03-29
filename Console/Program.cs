@@ -87,7 +87,7 @@ public class Program
 	public static double Power(string x, string y)
 	{    
        double baseValue = Convert.ToDouble(x);
-	   double exponentValue = Convert.ToDouble(y);
+	     double exponentValue = Convert.ToDouble(y);
 	   return Math.Pow(baseValue, exponentValue);
 	}
 }
