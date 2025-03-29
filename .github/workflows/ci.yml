@@ -1,4 +1,4 @@
-name: 'Run App <last name>, <first name>'
+name: 'Run App <Gonzalez>, <Sonny>'
 
 on: [push, pull_request]
 
