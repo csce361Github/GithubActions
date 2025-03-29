@@ -83,9 +83,10 @@ public class Program
 		return double.Parse(x) / double.Parse(y);
 	}
 	
-	public static double Power(double baseNum, double exponent)
+	public static double Power(string baseNum, string exponent)
 	{
-    	return Math.Pow(baseNum, exponent);
+    	return Math.Pow(double.Parse(baseNum), double.Parse(exponent));
 	}
+
 
 }
