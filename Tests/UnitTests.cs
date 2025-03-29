@@ -62,7 +62,7 @@ public class Multiplication
 	[TestMethod]
 	public void Multiply_Valid_Fruhling()
 	{
-		Assert.AreEqual(3, Program.Multiply("3", "1"));
+		Assert.AreEqual(6, Program.Multiply("3", "2"));
 		Assert.AreEqual(0, Program.Multiply("0", "2"));
 		Assert.AreEqual(12, Program.Multiply("2", "6"));
 	}
