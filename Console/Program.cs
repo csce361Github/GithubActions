@@ -35,7 +35,7 @@ public class Program
 						operation = Divide;
 						break;
 					case "5":
-						operation = (a, b) => Power(double.Parse(a), double.Parse(b));
+						operation = Power;
 						break;
 					case "6":
 						loop = false;
@@ -84,13 +84,16 @@ public class Program
 	}
 
 	// Implement this method following a similar pattern as above
-	 public static double Power(double x, double y)
+	 public static double Power(string x, string y)
+	{
+    double a = double.Parse(x);
+    double b = double.Parse(y);
+
+    double result = 1;
+    for (int i = 0; i < (int)b; i++)
     {
-        double result = 1;
-        for (int i = 0; i < y; i++)
-        {
-            result *= x;
-        }
-        return result;
+        result *= a;
     }
+    return result;
+	}
 }
