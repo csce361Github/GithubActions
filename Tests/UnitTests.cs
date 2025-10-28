@@ -27,3 +27,16 @@ public class Addition
 		Assert.ThrowsException<ArgumentNullException>(() => Program.Add(null, null));
 	}
 }
+
+	namespace Tests
+	{
+		public class ProgramTests
+		{
+			[TestMethod]
+			public void Power_FailingTest()
+			{
+				int result = Program.Power(2, 3);
+				Assert.AreEqual(10, result);
+			}
+		}
+	}
