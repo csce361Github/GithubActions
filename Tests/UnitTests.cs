@@ -12,7 +12,7 @@ public class ProgramTests
         double result = Program.Power("2", "3");
         Assert.AreEqual(8, result);
     }
-/*
+
     [TestMethod]
     public void Power_CorrectTest1()
     {
@@ -25,5 +25,5 @@ public class ProgramTests
     {
         double result = Program.Power("1", "5");
         Assert.AreEqual(1, result);
-      } */
+      } 
 }
