@@ -29,33 +29,31 @@ public class Addition
 	}
 }
 */
-	using Microsoft.VisualStudio.TestTools.UnitTesting;
+	namespace Tests;
 
-namespace Tests
+using Microsoft.VisualStudio.TestTools.UnitTesting;
+
+[TestClass]
+public class ProgramTests
 {
-    [TestClass]
-    public class ProgramTests
+    [TestMethod]
+    public void Power_FixedTest()
     {
-        [TestMethod]
-        public void Power_FixedTest()
-        {
-            // Corrected expected value
-            int result = Program.Power(2, 3); // 2^3 = 8
-            Assert.AreEqual(8, result); 
-        }
+        int result = Program.Power(2, 3);
+        Assert.AreEqual(8, result);
+    }
 
-        [TestMethod]
-        public void Power_CorrectTest1()
-        {
-            int result = Program.Power(3, 2); // 3^2 = 9
-            Assert.AreEqual(9, result);
-        }
+    [TestMethod]
+    public void Power_CorrectTest1()
+    {
+        int result = Program.Power(3, 2);
+        Assert.AreEqual(9, result);
+    }
 
-        [TestMethod]
-        public void Power_CorrectTest2()
-        {
-            int result = Program.Power(1, 5); // 1^5 = 1
-            Assert.AreEqual(1, result);  
-        }
+    [TestMethod]
+    public void Power_CorrectTest2()
+    {
+        int result = Program.Power(1, 5);
+        Assert.AreEqual(1, result);
     }
 }
