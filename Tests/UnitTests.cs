@@ -28,7 +28,10 @@ public class Addition
 	}
 }
 
-	namespace Tests
+	namespace Tests;
+
+	using Microsoft.VisualStudio.TestTools.UnitTesting;
+	
 	{
 		public class ProgramTests
 		{
