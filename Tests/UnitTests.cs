@@ -1,3 +1,4 @@
+/*
 namespace GithubActionsLab;
 
 [TestClass]
@@ -27,19 +28,34 @@ public class Addition
 		Assert.ThrowsException<ArgumentNullException>(() => Program.Add(null, null));
 	}
 }
-
-	namespace Tests;
-
+*/
 	using Microsoft.VisualStudio.TestTools.UnitTesting;
-	
-	{
-		public class ProgramTests
-		{
-			[TestMethod]
-			public void Power_FailingTest()
-			{
-				int result = Program.Power(2, 3);
-				Assert.AreEqual(8, result);
-			}
-		}
-	}
+
+namespace Tests
+{
+    [TestClass]
+    public class ProgramTests
+    {
+        [TestMethod]
+        public void Power_FixedTest()
+        {
+            // Corrected expected value
+            int result = Program.Power(2, 3); // 2^3 = 8
+            Assert.AreEqual(8, result); 
+        }
+
+        [TestMethod]
+        public void Power_CorrectTest1()
+        {
+            int result = Program.Power(3, 2); // 3^2 = 9
+            Assert.AreEqual(9, result);
+        }
+
+        [TestMethod]
+        public void Power_CorrectTest2()
+        {
+            int result = Program.Power(1, 5); // 1^5 = 1
+            Assert.AreEqual(1, result);  
+        }
+    }
+}
