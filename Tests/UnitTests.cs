@@ -36,7 +36,7 @@ public class Addition
 			public void Power_FailingTest()
 			{
 				int result = Program.Power(2, 3);
-				Assert.AreEqual(10, result);
+				Assert.AreEqual(8, result);
 			}
 		}
 	}
