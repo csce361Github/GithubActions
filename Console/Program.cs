@@ -63,29 +63,45 @@ public class Program
 		return Console.ReadLine()?.Trim() ?? throw new InvalidOperationException();
 	}
 
-	public static double Add(string x, string y)
-	{
-		return double.Parse(x) + double.Parse(y);
-	}
+	public static double Add(string? x, string? y)
+{
+    if (x == null || y == null)
+        throw new ArgumentNullException();
 
-	public static double Subtract(string x, string y)
-	{
-		return double.Parse(x) - double.Parse(y);
-	}
+    return double.Parse(x) + double.Parse(y);
+}
 
-	public static double Multiply(string x, string y)
-	{
-		return double.Parse(x) * double.Parse(y);
-	}
+public static double Subtract(string? x, string? y)
+{
+    if (x == null || y == null)
+        throw new ArgumentNullException();
 
-	public static double Divide(string x, string y)
-	{
-		return double.Parse(x) / double.Parse(y);
-	}
+    return double.Parse(x) - double.Parse(y);
+}
 
-	// Implement this method following a similar pattern as above
-	public static double Power(string x, string y)
-	{
-		return 0.0;
-	}
+public static double Multiply(string? x, string? y)
+{
+    if (x == null || y == null)
+        throw new ArgumentNullException();
+
+    return double.Parse(x) * double.Parse(y);
+}
+
+public static double Divide(string? x, string? y)
+{
+    if (x == null || y == null)
+        throw new ArgumentNullException();
+
+    return double.Parse(x) / double.Parse(y);
+}
+
+public static double Power(string? x, string? y)
+{
+    if (x == null || y == null)
+        throw new ArgumentNullException();
+
+    double baseNum = double.Parse(x);
+    double exponent = double.Parse(y);
+    return Math.Pow(baseNum, exponent);
+}
 }
