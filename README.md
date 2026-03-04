@@ -1,4 +1,4 @@
-[![Run App](https://github.com/kgerot/GithubActions/actions/workflows/run-app.yaml/badge.svg)](https://github.com/kgerot/GithubActions/actions/workflows/run-app.yaml)
+[![Run App Nguyen, Avery](https://github.com/avxryn/GithubActions/actions/workflows/ci.yml/badge.svg)](https://github.com/avxryn/GithubActions/actions/workflows/ci.yml)
 
 # Do not submit a pull request to `kgerot/GithubActions` or `dteske/TraviCI`. Not following this instruction can ruin the lab for others, so pay attention.
 
@@ -18,7 +18,7 @@ Just as a sanity check, make sure that everything is working before you begin. T
 ## Set up Github Actions to build the Console App
 
 First, let's explore the Action UI on Github. Go to the Actions Tab and look at any running jobs.
-Currently, there should be one job that has run successfully. 
+Currently, there should be one job that has run successfully.
 
 ![Actions Tab](./assets/imgs/actions-tab.PNG)
 
@@ -51,11 +51,11 @@ jobs:
 
 - Replace FullName on the first line with your name for grading.
 - Commit and push these changes to master
-- Open the Actions and see if your build is running (should be under the name of your commit). 
+- Open the Actions and see if your build is running (should be under the name of your commit).
 
 ## Build Status Badge
 
-Right now the build status badge at the top of this Readme is for the repo `kgerot/GithubActions` and  we want it to be *your* repository. 
+Right now the build status badge at the top of this Readme is for the repo `kgerot/GithubActions` and  we want it to be *your* repository.
 
 To change this, go to your last build in Actions and open it. Click the three dots on the right side of the screen and click Create status badge.
 
@@ -70,9 +70,9 @@ Once Github Actions is up and running, it should rebuild every time you push a c
 
 - Implement the `Power` method found in `Program.cs`.
 - Commit and push the change to a different branch.
-- Open a pull request **to your repository's main branch** 
+- Open a pull request **to your repository's main branch**
 
-### Do not submit a pull request to `kgerot/GithubActions` or `dteske/TraviCI`. Not following this instruction can ruin the lab for others. 
+### Do not submit a pull request to `kgerot/GithubActions` or `dteske/TraviCI`. Not following this instruction can ruin the lab for others.
 
 If you accidentally submit a pull request to the master branch of `kgerot/GithubActions`, please invite kgerot as a reviewer on the request so I can close it and properly fix the repository.
 
