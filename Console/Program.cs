@@ -86,6 +86,18 @@ public class Program
 	// Implement this method following a similar pattern as above
 	public static double Power(string x, string y)
 	{
-		return 0.0;
+		try
+		{
+			return Math.Pow(double.Parse(x), double.Parse(y));
+
+		}
+		catch (FormatException)
+		{
+			throw new FormatException("Both x and y must be valid numbers.");
+		}
+		catch (ArgumentNullException)
+		{
+			throw new ArgumentNullException("Both x and y must be provided.");
+		}
 	}
 }
