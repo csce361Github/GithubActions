@@ -29,9 +29,9 @@ public class Addition
 	[TestMethod]
 	public void Add_Empty_Rometh()
 	{
-		Assert.ThrowsException<ArgumentException>(() => Program.Add("1", ""));
-		Assert.ThrowsException<ArgumentException>(() => Program.Add("", "1"));
-		Assert.ThrowsException<ArgumentException>(() => Program.Add("", ""));
+		Assert.ThrowsException<FormatException>(() => Program.Add("1", ""));
+		Assert.ThrowsException<FormatException>(() => Program.Add("", "1"));
+		Assert.ThrowsException<FormatException>(() => Program.Add("", ""));
     }
 
 	[TestMethod]
